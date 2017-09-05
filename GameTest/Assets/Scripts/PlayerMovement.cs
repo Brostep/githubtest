@@ -8,8 +8,9 @@ public class PlayerMovement : MonoBehaviour {
 	Transform position;
 	Transform position2;
 	// rb
-	void Start () {
+	void Start()
+	{
 		rb = GetComponent<Rigidbody>();
-		position = position2;
+		position = this.gameObject.transform;
 	}
 }
